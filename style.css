@@ -263,6 +263,8 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 }
 .contact-left p{
+    display: flex; 
+    align-items: center;
     margin-top:20px;
 }
 .contact-left p i{
@@ -270,11 +272,14 @@ nav ul li a:hover::after{
     margin-right: 15px;
     font-size: 25px;
 }
+.contact-left p a i:hover{
+    transform: translateY(-5px);
+}
 .social-icons a{
     text-decoration: none;
     font-size: 30px;
     margin-top:25px;
-    margin-right: 15px;
+    margin-right: 10px;
     color:#ff004f;
     display: inline-block;
     transition: transform 0.5s;
@@ -370,7 +375,8 @@ nav .fa-solid{
         margin-right:30px;
     }
     .contact-left p i{
-        font-size: 15px;
+        font-size: 20px;
+        
     }
     .copyright{
         font-size: 14px;
