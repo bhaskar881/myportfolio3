@@ -375,9 +375,9 @@ nav .fa-solid{
         margin-right:30px;
     }
     .contact-left p{
-    display: flex; 
-    align-items: center;
-    margin-top:20px;
+        display: flex; 
+        align-items: center;
+        margin-top:20px;
     }
     .contact-left p i{
         font-size: 20px;
