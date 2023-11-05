@@ -1,272 +1,215 @@
 <html>
-  <head>
-    <title>portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript"></script>
-    <script
-      src="https://kit.fontawesome.com/6e6e36ec13.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div id="header">
-      <div class="container">
-        <nav>
-          <p id="name">Bhaskar</p>
-          <ul id="sidemenu">
-            <li><a href="#header">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#services">services</a></li>
-            <li><a href="#portfolio">portfolio</a></li>
-            <li><a href="#contact">contact</a></li>
-            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-          </ul>
-          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-          <p>Fresher</p>
-          <h1>
-            Hi,I'm <span>Bhaskar prasad</span> from<br />
-            Ramachandrapuram
-          </h1>
+    <head>
+        <title>portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript"></script>
+        <script src="https://kit.fontawesome.com/6e6e36ec13.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <p id="name">Bhaskar</p>
+                    <ul id="sidemenu">
+                        <li><a href="#header">home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#services">services</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#contact">contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Fresher</p>
+                    <h1>Hi,I'm <span>Bhaskar prasad</span> from<br> Ramachandrapuram</h1>
+
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
     <!----------------about----------------------------------------->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="./profile.jpg" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p class="about">
-              My ultimate career objective is to secure a position in a
-              progressive company where I can utilize my skills and contribute
-              to achieving the organization's goals. As a self-motivated
-              individual, I am eager to work in an environment that can support
-              my personal and professional growth and lead to long-term success
-              in my career.
-            </p>
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                skills
-              </p>
-              <p class="tab-links" onclick="opentab('experience')">
-                Experience
-              </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="./profile.jpg"> 
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p class="about">My ultimate career objective is to secure a position 
+                            in a progressive company where I can utilize my skills and contribute
+                             to achieving the organization's goals. As a self-motivated individual,
+                              I am eager to work in an environment that can support my personal
+                               and professional growth and lead to long-term success in my career.
+
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Python</span><br>Basic and Advanced</li>
+                                <li><span>Html</span><br>designing web interfaces</li>
+                                <li><span>Css</span><br>Adding styles to web pages</li>
+                                <li><span>javascript</span><br>to make user interactive web pages</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Ideal solar</span><br>worked as a fitter in solar power fencing in the year 2017</li>
+                                <li><span>BBG india</span><br>worked as associate sales person in a big real estate company in india</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2015</span><br>SSC from S.R.G.MPL.High school</li>
+                                <li><span>2015-2017</span><br>intermediate(MPC) from vikas junior college</li>
+                                <li><span>2018-2022</span><br>Computer Sience and Engineering from <span class="kiet">K</span>akinada Institute of Engineering and Technology</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li><span>Python</span><br />Basic and Advanced</li>
-                <li><span>Html</span><br />designing web interfaces</li>
-                <li><span>Css</span><br />Adding styles to web pages</li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li><span>Ideal solar</span><br />solar power fence</li>
-                <li>
-                  <span>BBG india</span><br />worked as associate sales person
-                </li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li><span>2015</span><br />SSC from S.R.G.MPL.High school</li>
-                <li><span>2015-2017</span><br />intermediate(MPC)</li>
-                <li>
-                  <span>2018-2022</span><br />Btech(computer science and
-                  engineering)
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <!--------------------servicess------------------------------------------>
-    <div id="services">
-      <div class="container">
+<!--------------------servicess------------------------------------------>
+<div id="services">
+    <div class="container">
         <h1 class="sub-title">My services</h1>
         <div class="services-list">
-          <div>
-            <i class="fa-solid fa-graduation-cap"></i>
-            <h2>College Enlightenment System</h2>
-            <p>
-              this is a dynamic web application used to maintain a student
-              portal about fees structures and all students fees structure to
-              the department
-            </p>
-            <a href="#">Learn more</a>
-          </div>
-          <div>
-            <i class="fa-brands fa-app-store"></i>
-            <h2>Online Voting System</h2>
-            <p>
-              designed a web application using html,css and java script to
-              choose a leader in a class or a college by voting in online
-            </p>
-            <a href="#">Learn more</a>
-          </div>
-          <div>
-            <i class="fa-solid fa-user"></i>
-            <h2>Portfolio</h2>
-            <p>
-              designed a personal portfolio web site by using html,css and java
-              script to know about me
-            </p>
-            <a href="#">Learn more</a>
-          </div>
+            <div>
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h2>College Enlightenment System</h2>
+                <p>this is a dynamic web application used to maintain a student portal 
+                    about fees structures and all students fees structure to the department</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Online Voting System</h2>
+                <p>designed a web application using html,css and java script to choose
+                    a leader in a class or a college by voting in online</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <h2>Portfolio</h2>
+                <p>designed a personal portfolio web site by using html,css and java script to know about me </p>
+                    <a href="#">Learn more</a>
+            </div>
         </div>
-      </div>
     </div>
-    <!---------------------------my work----------------------------------------->
-    <div id="portfolio">
-      <div class="container">
+</div>
+<!---------------------------my work----------------------------------------->
+<div id="portfolio">
+    <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
-          <div class="work">
-            <img src="./college portal.jpg" />
-            <div class="layer">
-              <h3>College portal</h3>
-              <p>
-                this is a dynamic web application used to maintain a student
-                portal about fees structures and all students fees structure to
-                the department
-              </p>
-              <a href="#"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
+            <div class="work">
+                <img src="./college portal.jpg">
+                <div class="layer">
+                    <h3>College portal</h3>
+                    <p>this is a dynamic web application used to maintain a student portal 
+                        about fees structures and all students fees structure to the department</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
             </div>
-          </div>
-          <div class="work">
-            <img src="./voting.jpg" />
-            <div class="layer">
-              <h3>Online voting</h3>
-              <p>
-                designed a web application using html,css and java script to
-                choose a leader in a class or a college by voting in online
-              </p>
-              <a href="#"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
+            <div class="work">
+                <img src="./voting.jpg">
+                <div class="layer">
+                    <h3>Online voting</h3>
+                    <p>designed a web application using html,css and java script to choose
+                        a leader in a class or a college by voting in online</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
             </div>
-          </div>
-          <div class="work">
-            <img src="./mywork.png" />
-            <div class="layer">
-              <h3>portfolio</h3>
-              <p>
-                designed a personal portfolio web site by using html,css and
-                java script to know about me
-              </p>
-              <a href="#"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
+            <div class="work">
+                <img src="./mywork.png">
+                <div class="layer">
+                    <h3>portfolio</h3>
+                    <p>designed a personal portfolio web site by using html,css and java script to know about me</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
             </div>
-          </div>
         </div>
         <a href="#" class="btn">See more</a>
-      </div>
     </div>
-    <!-----------------------------------contact----------------------------------->
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p style="display: flex; align-items: center">
-              <i class="fa-solid fa-paper-plane"></i>bhaskarprasad881@gmail.com
-            </p>
-            <p>
-              <a href="tel:9515613996"><i class="fa-solid fa-phone"></i></a
-              >9515613996
-            </p>
-
-            <div class="social-icons">
-              <a href="https://www.facebook.com/bhaskar.prasad.7921/"
-                ><i class="fa-brands fa-facebook"></i
-              ></a>
-              <a href="https://www.instagram.com/telugu_boy_bhaskar/"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a href="https://www.linkedin.com/in/bhaskar-prasad-14a188228/"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
+</div>
+<!-----------------------------------contact----------------------------------->
+<div id="contact">
+    <div class="container">
+         <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>bhaskarprasad<br>881@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9515613996</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/bhaskar.prasad.7921/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/telugu_boy_bhaskar/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/bhaskar-prasad-14a188228/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="./my resume.pdf"Download class="btn btn2">Download CV</a>
             </div>
-            <a href="./my resume.pdf" download class="btn btn2">Download CV</a>
-          </div>
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="name" placeholder="your name" required />
-              <input
-                type="email"
-                name="email"
-                placeholder="your email"
-                required
-              />
-              <textarea
-                name="message"
-                rows="6"
-                placeholder="your message"
-              ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="msg"></span>
-          </div>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>copyright @bhaskar prasad. this web site made by me</p>
-      </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="your name" required>
+                    <input type="email" name="email" placeholder="your email" required>
+                    <textarea name="message" rows="6" placeholder="your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+         </div>
     </div>
+    <div class="copyright">
+        <p>copyright @bhaskar prasad. this web site made by me</p>
+    </div>
+</div>
 
-    <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
-    </script>
-    <script>
-      var sidemenu = document.getElementById("sidemenu");
 
-      function openmenu() {
+<script>
+    
+    var tablinks=document.getElementsByClassName("tab-links")
+    var tabcontents=document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }  
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
         sidemenu.style.right = "0";
-      }
-      function closemenu() {
+    }
+    function closemenu(){
         sidemenu.style.right = "-200";
-      }
-    </script>
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbzM-HQzPihVni8DOWTdzqsY3pq3DR8-D9-JTUWx2cyCjnqlsqdXHYqy1edJYjUveyRv/exec";
-      const form = document.forms["submit-to-google-sheet"];
-      const msg = document.getElementById("msg");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            msg.innerHTML = "message sent successfully";
-            setTimeout(function () {
-              msg.innerHTML = "";
-            }, 5000);
-            form.reset();
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
-  </body>
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzM-HQzPihVni8DOWTdzqsY3pq3DR8-D9-JTUWx2cyCjnqlsqdXHYqy1edJYjUveyRv/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>  {
+            msg.innerHTML = "message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
 </html>
